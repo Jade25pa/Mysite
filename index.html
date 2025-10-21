@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EMPRESAS CON SERVIÇOS LTDA.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170') no-repeat center center/cover;
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+        .hero h1 {
+            font-size: 50px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        .hero p {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .text-block, .image-block {
+            width: 48%;
+        }
+        .image-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .full-width {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .services, .advantages, .process {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-form {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #e8e8e8;
+        }
+        .contact {
+            background-color: #222;
+            color: #fff;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Quem Somos</a></li>
+        <li><a href="#servicos">O Que Fazemos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<!-- 1. Início -->
+<section class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>EMPRESAS CON SERVIÇOS LTDA.</h1>
+        <p>Consultoria especializada em gestão empresarial, administrativa e de projetos. Ajudamos empresas a crescer com estratégias eficientes, planejamento sólido e execução de alto nível.</p>
+    </div>
+</section>
+
+<!-- 2. Sobre Nós -->
+<section id="sobre">
+    <div class="text-block">
+        <h2>Quem Somos</h2>
+        <p>Somos uma empresa dedicada à excelência em gestão organizacional. Atuamos lado a lado com nossos clientes, oferecendo soluções estratégicas em consultoria empresarial, otimização de processos e gerenciamento de projetos. Nosso foco está na eficiência, inovação e resultados mensuráveis.</p>
+        <p>Com uma equipe experiente, transformamos desafios em oportunidades e criamos valor sustentável para empresas de todos os tamanhos.</p>
+    </div>
+    <div class="image-block">
+        <img src="https://media.istockphoto.com/id/2157427049/photo/business-men-with-colleague-traders-at-office-monitoring-stocks-data-on-screen-analyzing.webp?a=1&b=1&s=612x612&w=0&k=20&c=SMlA0yn5TPlHz3YEX69NVyOn03_nyfPjf_NxKFKNZOE=" alt="Equipe trabalhando">
+    </div>
+</section>
+
+<!-- 3. Serviços -->
+<section id="servicos" class="full-width">
+    <h2>O Que Fazemos</h2>
+    <div class="services">
+        <div class="box">
+            <h3>Gestão Empresarial</h3>
+            <p>Implementamos práticas de gestão que melhoram o desempenho geral da sua empresa, com foco em produtividade, liderança e sustentabilidade.</p>
+        </div>
+        <div class="box">
+            <h3>Gerenciamento de Projetos</h3>
+            <p>Planejamos, organizamos e monitoramos projetos do início ao fim, garantindo prazos, escopos e qualidade com metodologia ágil ou tradicional.</p>
+        </div>
+        <div class="box">
+            <h3>Consultoria Estratégica</h3>
+            <p>Analisamos seu negócio profundamente e oferecemos soluções customizadas para melhorar seus resultados, expandir mercado e reduzir riscos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Vantagens -->
+<section id="vantagens" class="full-width">
+    <h2>Por Que Trabalhar Conosco?</h2>
+    <div class="advantages">
+        <div class="box">
+            <h3>Experiência Comprovada</h3>
+            <p>Mais de 10 anos ajudando empresas a crescer com soluções práticas e efetivas.</p>
+        </div>
+        <div class="box">
+            <h3>Foco em Resultados</h3>
+            <p>Cada projeto é orientado a metas claras e mensuráveis, sempre com retorno garantido.</p>
+        </div>
+        <div class="box">
+            <h3>Atendimento Personalizado</h3>
+            <p>Oferecemos suporte dedicado e estratégias sob medida para cada cliente.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Processo -->
+<section id="processo" class="full-width">
+    <h2>Como Trabalhamos</h2>
+    <div class="process">
+        <div class="box">
+            <h3>1. Diagnóstico</h3>
+            <p>Entendemos a fundo a realidade da sua empresa, identificando pontos fortes e oportunidades.</p>
+        </div>
+        <div class="box">
+            <h3>2. Estratégia</h3>
+            <p>Desenvolvemos um plano de ação personalizado, alinhado aos seus objetivos e recursos.</p>
+        </div>
+        <div class="box">
+            <h3>3. Execução</h3>
+            <p>Colocamos o plano em prática com acompanhamento contínuo, ajustes e medição de resultados.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Frases para Contato -->
+<section id="contato" class="contact-form">
+    <h2>Vamos Conversar</h2>
+    <p>Está pronto para transformar sua empresa com uma gestão mais eficiente?</p>
+    <p>Entre em contato conosco e descubra como podemos contribuir com o sucesso do seu negócio.</p>
+    <p>Email: <a href="mailto:info@empresasconservicos.org" style="color: #fff;">info@empresasconservicos.org</a></p>
+</section>
+
+<!-- 7. Contato -->
+<section class="contact">
+    <h2>Fale Conosco</h2>
+    <p>Email: <a href="mailto:info@empresasconservicos.org" style="color: #fff;">info@empresasconservicos.org</a></p>
+    <p>Endereço: Rua São Paulo 1600, 60030-101 Fortaleza - CE</p>
+</section>
+
+</body>
+</html>
